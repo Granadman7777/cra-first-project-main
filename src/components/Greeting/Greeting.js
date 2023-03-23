@@ -3,11 +3,22 @@ import React from "react"
 class Greeting extends React.Component {
     constructor(props) {
         super(props);
-        this.state = {}
+        this.state = {
+            isGreeting: true
+        }
+    }
+
+    clickHandler() {
+        this.setState({
+            isGreeting: !this.state.isGreeting
+        })
     }
 
     render() {
-        return <h1>Hello {this.props}</h1>
+        const {isGreeting} = this.statte; 
+        const greetingText = isGreeting ? 'hello' : 'bye';
+
+        return <h1 onClick={() => this.clickHandler()}> greetingText {this.props.name}</h1>
     }
 }
 
