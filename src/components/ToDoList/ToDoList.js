@@ -36,7 +36,7 @@ class ToDoList extends React.Component {
         const {todolist} = this.state;
         return todolist.map((task) => <li key={task.id}>
             {task.text}
-            <button onClick={() => {this.removeTask(task.id)}}>DEL </button>
+            <button onClick={() => {this.removeTask(task.id)}}> DEL </button>
             </li>)
     };
 
