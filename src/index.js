@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import Scene from "./components/Scene/Scene";
+import ToDoList from './components/ToDoList/ToDoList'
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-        <Scene/>
+        <ToDoList/>
 );
